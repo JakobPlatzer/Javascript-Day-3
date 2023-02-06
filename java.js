@@ -59,19 +59,19 @@
 
 // Function Version
 
-    function FizzleBuzzle() {
-        let integer = Math.floor(Math.random()*101)
+    // function FizzleBuzzle() {
+    //     let integer = Math.floor(Math.random()*101)
        
-        if (Number.isInteger(integer/15)) {
-            console.log('FizzBuzz');
-        } else if (Number.isInteger(integer/5)) {
-            console.log('Buzz');
-        } else if (Number.isInteger(integer/3)) {
-            console.log('Fizz');
-        } else {console.log(integer)}
-    }
+    //     if (Number.isInteger(integer/15)) {
+    //         console.log('FizzBuzz');
+    //     } else if (Number.isInteger(integer/5)) {
+    //         console.log('Buzz');
+    //     } else if (Number.isInteger(integer/3)) {
+    //         console.log('Fizz');
+    //     } else {console.log(integer)}
+    // }
 
-    FizzleBuzzle();
+    // FizzleBuzzle();
 
 // Loop Version
 
@@ -85,3 +85,20 @@
 //     } else {console.log(i)}
 // }
 
+// Challenge
+
+let students = ["John", "Louis", "Taylor", "Whitney", "Ella", "Bill", "Joe", "Tom", "Christina", "Valentina", "Amanda", "Francis", "Catelyn", "Matthew", "Maria"];
+let mathGrades = [55, 78, 64, 90, 43, 74, 99, 87, 67, 34, 88, 76, 91, 71, 55];
+
+let firstName = document.getElementById("firstName").value
+
+function getGrade() {
+    if (students.includes(firstName)) {
+        let i = students.indexOf(firstName)
+        console.log(students[i] + ' got ' + mathGrades[i] + ' points.')
+    } else {
+        console.log('Nobody with this name is in the class.')
+    }
+}
+
+getGrade();
