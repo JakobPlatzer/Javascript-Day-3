@@ -1,15 +1,15 @@
 // Basic Exercise 1
 
-let array = [1, 7, -3, 9, 13, 200, 0, 23, 12, 90, 75, 105];
-let max = 0;
+// let array = [1, 7, -3, 9, 13, 200, 0, 23, 12, 90, 75, 105];
+// let max = 0;
 
-for (let val of array) {
-    if (max < val) {
-        max = val
-    } 
-}
+// for (let val of array) {
+//     if (max < val) {
+//         max = val
+//     } 
+// }
 
-console.log(max);
+// console.log(max);
 
 // Intermediate Exercise 1
 
@@ -57,13 +57,31 @@ console.log(max);
 
 // Intermediate Exercise 2
 
-for (i = 1; i <= 100; i++) {
-    if (Number.isInteger(i/15)) {
-        console.log('FizzBuzz');
-    } else if (Number.isInteger(i/5)) {
-        console.log('Buzz');
-    } else if (Number.isInteger(i/3)) {
-        console.log('Fizz');
-    } else {console.log(i)}
-}
+// Function Version
+
+    function FizzleBuzzle() {
+        let integer = Math.floor(Math.random()*101)
+       
+        if (Number.isInteger(integer/15)) {
+            console.log('FizzBuzz');
+        } else if (Number.isInteger(integer/5)) {
+            console.log('Buzz');
+        } else if (Number.isInteger(integer/3)) {
+            console.log('Fizz');
+        } else {console.log(integer)}
+    }
+
+    FizzleBuzzle();
+
+// Loop Version
+
+// for (i = 1; i <= 100; i++) {
+//     if (Number.isInteger(i/15)) {
+//         console.log('FizzBuzz');
+//     } else if (Number.isInteger(i/5)) {
+//         console.log('Buzz');
+//     } else if (Number.isInteger(i/3)) {
+//         console.log('Fizz');
+//     } else {console.log(i)}
+// }
 
