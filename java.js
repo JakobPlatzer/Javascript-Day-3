@@ -15,10 +15,9 @@ console.log(max);
 
 let students = ['Martin', 'Thomas', 'Klaus', 'Maria', 'David'];
 let grades = [76, 85, 65, 93, 81];
-let sum = 0
 
 function averagePoints () {
-
+    let sum = 0;
     for (let i = 0; i < grades.length; i++) {
         sum = sum + grades[i];
     }
@@ -54,4 +53,7 @@ function classGrade() {
         console.log('The class got an A');
     }
 }
- averagePoints();
+classGrade();
+
+// Intermediate Exercise 2
+
