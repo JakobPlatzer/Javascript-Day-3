@@ -22,10 +22,10 @@ function averagePoints () {
     for (let i = 0; i < grades.length; i++) {
         sum = sum + grades[i];
     }
-    return console.log('The average grade for each student is ' + sum/grades.length);
+    return result=(sum/grades.length);
 }
 
-averagePoints()
+console.log(averagePoints());
 
 for (let i = 0; i < grades.length; i++) {
     if (grades[i] < 60) {
@@ -41,3 +41,17 @@ for (let i = 0; i < grades.length; i++) {
     }
 }
 
+function classGrade() {
+    if (averagePoints() < 60) {
+        console.log('The class got an F');
+    } else if (averagePoints() < 70) {
+        console.log('The class got a D');
+    } else if (averagePoints() < 80) {
+        console.log('The class got a C');
+    } else if (averagePoints() < 90) {
+        console.log('The class got a B');
+    } else {
+        console.log('The class got an A');
+    }
+}
+ averagePoints();
