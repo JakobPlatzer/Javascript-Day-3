@@ -90,14 +90,22 @@
 let students = ["John", "Louis", "Taylor", "Whitney", "Ella", "Bill", "Joe", "Tom", "Christina", "Valentina", "Amanda", "Francis", "Catelyn", "Matthew", "Maria"];
 let mathGrades = [55, 78, 64, 90, 43, 74, 99, 87, 67, 34, 88, 76, 91, 71, 55];
 
-let firstName = document.getElementById("firstName").value
+let firstName = prompt("type your first name");
 
 function getGrade() {
     if (students.includes(firstName)) {
         let i = students.indexOf(firstName)
-        console.log(students[i] + ' got ' + mathGrades[i] + ' points.')
+        if (mathGrades[i] < 60) {
+            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+        } else if (mathGrades[i] < 70) {
+            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+        } else if (mathGrades[i] < 100) {
+            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+        } else {
+            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+        }
     } else {
-        console.log('Nobody with this name is in the class.')
+        document.write('Nobody with this name is in the class.').style.color = "red";
     }
 }
 
