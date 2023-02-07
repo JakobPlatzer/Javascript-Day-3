@@ -9,6 +9,19 @@
 //     } 
 // }
 
+//Basic Exercise 2
+let temp = Math.floor(Math.random()*31)-5;
+
+console.log(temp)
+
+if (temp < 10) {
+    document.getElementById("weatherMessage").innerHTML = "The weather is cold!";
+} else if (temp < 30) {
+    document.getElementById("weatherMessage").innerHTML = "The weather is moderate!";
+} else {
+    document.getElementById("weatherMessage").innerHTML = "The weather is hot!";
+}
+
 // console.log(max);
 
 // Intermediate Exercise 1
@@ -87,26 +100,26 @@
 
 // Challenge
 
-let students = ["John", "Louis", "Taylor", "Whitney", "Ella", "Bill", "Joe", "Tom", "Christina", "Valentina", "Amanda", "Francis", "Catelyn", "Matthew", "Maria"];
-let mathGrades = [55, 78, 64, 90, 43, 74, 99, 87, 67, 34, 88, 76, 91, 71, 55];
+// let students = ["John", "Louis", "Taylor", "Whitney", "Ella", "Bill", "Joe", "Tom", "Christina", "Valentina", "Amanda", "Francis", "Catelyn", "Matthew", "Maria"];
+// let mathGrades = [55, 78, 64, 90, 43, 74, 99, 87, 67, 34, 88, 76, 91, 71, 55];
 
-let firstName = prompt("type your first name");
+// let firstName = prompt("type your first name");
 
-function getGrade() {
-    if (students.includes(firstName)) {
-        let i = students.indexOf(firstName)
-        if (mathGrades[i] < 60) {
-            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
-        } else if (mathGrades[i] < 70) {
-            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
-        } else if (mathGrades[i] < 100) {
-            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
-        } else {
-            document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
-        }
-    } else {
-        document.write('Nobody with this name is in the class.').style.color = "red";
-    }
-}
+// function getGrade() {
+//     if (students.includes(firstName)) {
+//         let i = students.indexOf(firstName)
+//         if (mathGrades[i] < 60) {
+//             document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+//         } else if (mathGrades[i] < 70) {
+//             document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+//         } else if (mathGrades[i] < 100) {
+//             document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+//         } else {
+//             document.write(students[i] + ' got ' + mathGrades[i] + ' points.')
+//         }
+//     } else {
+//         document.write('Nobody with this name is in the class.').style.color = "red";
+//     }
+// }
 
-getGrade();
+// getGrade();
